@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/fivsag/Fiv_play3Project
   gitUsername: fivsag
   gitBranch: main
+services:
+- serviceName: project.fiv_play3.integrations:JustDADAFlow
+  packages:
+  - name: Fiv_play3Project
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.1018
