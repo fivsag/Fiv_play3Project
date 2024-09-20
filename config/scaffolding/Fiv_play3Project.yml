@@ -16,3 +16,7 @@ services:
   packages:
   - name: WmPublic
     version: 11.0.0.0.1018
+- serviceName: project.fiv_play3.integrations:ProcessOrderDaDaUS
+  packages:
+  - name: Fiv_play3Project
+    version: "1.0"
