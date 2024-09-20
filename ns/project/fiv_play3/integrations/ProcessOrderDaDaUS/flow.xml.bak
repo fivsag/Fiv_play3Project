@@ -106,7 +106,7 @@
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">Order number: %orderNumber% from %date%made through %channel% by custoer with id %customerId% has been processed with transaction id: </value>
+  <value name="xml">Order number: %orderNumber% from %date%made through %channel% by custoer with id %customerId% has been processed with transaction id: %trnasactionid%</value>
 </Values>
 </DATA>
 </MAPSET>
