@@ -5,7 +5,23 @@
 
   <!-- nodes -->
 
-<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="TRY">
   <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="Flow" SERVICE="pub.flow:debugLog">
+  <COMMENT></COMMENT>
+</INVOKE>
+</SEQUENCE>
+
+<SEQUENCE EXIT-ON="FAILURE" FORM="CATCH">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<EXIT FROM="$parent" SIGNAL="FAILURE" FAILURE-MESSAGE="Could not Process!">
+  <COMMENT></COMMENT>
+</EXIT>
 </SEQUENCE>
 </FLOW>
